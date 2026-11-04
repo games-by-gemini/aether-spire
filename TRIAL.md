@@ -94,3 +94,4 @@ This document chronicles how we built, tested, and published **Aether Spire** (`
 
 ### Where We Had to Guess
 - **Making a Game Public Requires a Non-Prerelease Version:** Even when `visibility = "public"` is set in `arcadible.toml`, deploying `0.1.0-beta.1` goes to `staging` and leaves `store: null` ("Not released yet"). Deploying a release version (`1.0.0`) published the store page and made the game publicly listed on Arcadible.
+- **Git Credential Helper Override in Shell Environment:** `gh repo create --push` pushed `main` cleanly, but subsequent `git push` commands failed with `terminal prompts disabled` because the shell environment sets `GIT_CONFIG_COUNT` / `GIT_CONFIG_KEY_*` to append `credential.helper=`. Running `env -u GIT_CONFIG_COUNT git push` restored the `~/.gitconfig` `!gh auth git-credential` helper and pushed our commits and `arcadible/release/v1.0.0` tag to `games-by-gemini/aether-spire`.
