@@ -1,0 +1,14 @@
+[game]
+id = "e76fa1a4-c0f9-4d6d-87cd-2854323e8f23"
+version = "1.0.0"
+handle = "aether-spire"
+genres = ["action", "arcade", "puzzle"]
+audience = "everyone"
+ai = "unused"
+orientation = "landscape"
+inputs = ["keyboard", "mouse", "gamepad", "touch"]
+visibility = "public"
+
+[workflow]
+build = "node build.mjs"
+deploy_dir = ".arcadible-public"

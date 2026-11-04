@@ -1,0 +1,13 @@
+name: Arcadible Release
+
+on:
+  push:
+    tags:
+      - "arcadible/release/v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    uses: arcadible/workflows/.github/workflows/release.yml@v1

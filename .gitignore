@@ -1,0 +1,19 @@
+._*
+.DS_Store
+*~
+$RECYCLE.BIN/
+Desktop.ini
+Thumbs.db
+
+# Node.js
+
+*.log*
+node_modules/
+
+# Arcadible
+
+.arc/
+
+# Build
+
+.arcadible-public/
