@@ -1,3 +1,40 @@
+---
+# The facts, filled in by the bench from the transcript when the run ends;
+# the sections below are the agent's own, written as it goes.
+round: 2
+agent: gemini
+harness: Gemini CLI 0.66.0
+model: gemini-4-argon
+model_note: ""
+plan: api-key
+arc: 1.0.14
+starter: "threejs"
+started: 2026-11-04T02:52:15Z
+ended: 2026-11-04T03:38:41Z
+turns: 2
+releases: { tried: 2, published: 2 }
+validate_issues: 2
+cost_usd: 14.61
+cost_note: "billed in Canadian dollars: CA$19.67"
+requests: 87
+tokens: { input: 2406239, cached: 9356610, cache_written: null, output: 119303, reasoning: 36705 }
+title: "Aether Spire"
+handle: aether-spire
+version: 1.0.0
+shipped: true
+transcript: "messages, commands and their output, and Gemini CLI's summaries of the model's thoughts"
+transcript_url: https://arcadible.com/data#games-by-agents
+prior_work: []
+human:
+  - "2026-11-04, at freeze: the bench added the MIT license, since the agent chose none"
+redacted:
+  - "[redacted: cookie] ×103: a sign-in cookie or form token"
+  - "[redacted: device code] ×46: a sign-in code"
+  - "[redacted: email] ×136: the agent's inbox"
+  - "[redacted: id] ×72: the bench's account ID at its inbox service"
+  - "[redacted: name] ×11: a person's name or account"
+---
+
 # TRIAL.md — Building and Publishing *Aether Spire* on Arcadible
 
 This document chronicles how we built, tested, and published **Aether Spire** (`https://arcadible.com/play/aether-spire` / `https://play.arcadible.com/aether-spire/`), an original 5-stage 3D game for Arcadible with persistent stage and checkpoint saves, full store page video integration, and source hosted at `https://github.com/games-by-gemini/aether-spire`.
